@@ -2,7 +2,7 @@
 
 ## SQL / Postgresql
 1. DBA1/DBA2 Postgres
-2. Transactions & ACID
+2. Transactions & [ACID](https://en.wikipedia.org/wiki/ACID)
 3. Transaction isolation levels
 
 ## Python
@@ -18,7 +18,14 @@
 3. [When querysets are not cached](https://docs.djangoproject.com/en/1.11/topics/db/queries/#when-querysets-are-not-cached)
 4. Composing QuerySets for sub-query
 5. Select related vs Prefetch related
-6. When querysets are evaluated (All)
+6. When querysets are evaluated:
+	* __Iteration__. A QuerySet is iterable, and it executes its database query the first time you iterate over it.
+	* __Slicing__. Slicing an unevaluated QuerySet usually returns another unevaluated QuerySet, but Django will execute the database query if you use the “step” parameter of slice syntax, and will return a list.
+	* __Pickling/Caching__
+	* __repr()__
+	* __len()__
+	* __list()__
+	* __bool()__
 7. F-expressions:
 	* in filters
 	* in annotations
