@@ -1,0 +1,15 @@
+{
+    "files.autoSave": "onFocusChange",
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80,
+    "editor.lineNumbers": "off",
+    "editor.minimap.enabled": false,
+    "editor.renderIndentGuides": false,
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "docker.showExplorer": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.gitExplorer.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "workbench.colorTheme": "Default Light+",
+}
