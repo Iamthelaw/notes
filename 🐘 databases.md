@@ -6,6 +6,131 @@
 + [Postgresql performance](http://www.revsys.com/writings/postgresql-performance.html)
 + [Speedup postgres with partial indixes](https://blog.heapanalytics.com/speeding-up-postgresql-queries-with-partial-indexes/)
 
+Egghead
+- https://egghead.io/courses/get-started-with-postgresql
+- https://egghead.io/courses/using-postgres-window-functions
+- https://egghead.io/courses/understand-joins-and-unions-in-postgres
+
+
+***
+### Objects
+
+Writings from DBA1-08
+
+#### Tables
+System tables where can be found more info about this object
+
+```
+pg_class where relkind='r'
+pg_tables
+pg_attribute
+pg_attrdef
+```
+
+- Non-Journal
+    no write to WAL
+    table can't be restored if there was server fault
+
+- Temporaly
+    - Lives in session or transaction
+    - is non-journal
+    - not available in shared buffer cache
+
+#### Types
+
+```
+pg_type
+pg_enum
+\dt
+```
+
+- Integers
+- Symbolic
+- Double
+- Dates
+- Logic (__!important__ true, false and __null__)
+- Sequences
+- Geomerical
+- Arrays
+- Records
+- Ranges
+- XML, JSON et c.
+
+#### Constrains
+
+```
+pg_constraint
+```
+
+- Primary Key
+- Unique
+- Foreign Key
+- Not null
+- Check (row level)
+- Exclude (all rows)
+
+Constrain is evaluated in the beginning of the transaction or in the very end.
+
+#### Sequences
+
+```
+pg_class where relkind='S'
+\d
+\ds
+```
+
+- Generationg sequnces of numbers
+    - guaranted uniquines
+    - can be asorted
+
+Internaly it is an onepage table with numbers
+
+#### Indexes
+
+```
+pg_class where relkind='i'
+pg_index
+\di
+```
+
+Types:
+- B-tree (balanced tree)
+- GiST
+- SP-GiST
+- GIN (inverted list), mainly fulltext search operations
+
+#### User defined functions
+
+```
+pg_language
+pg_proc
+\df
+```
+
+- Languages
+    - sql
+    - C
+    - PL/pgSQL, PL/Python
+
+- Overdriven function
+- Aggregations and Window functions
+
+#### Triggers
+
+```
+pg_trigger
+```
+
+#### Event Triggers
+
+```
+pg_event_trigger
+pg_proc
+\dy
+```
+- on DLL commands (All languages except SQL)
+- on (Alterm Create, Drop) before or after command
+
 ### Locks
 Show blocking Postgres processes and kill them
 

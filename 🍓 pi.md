@@ -62,3 +62,7 @@ Syntax as follows: `check process`, a name that will be visible in web and conso
 ```
 check process broadcaster matching tbb
 ```
+
+https://pi-hole.net/
+
+https://howtoraspberrypi.com/monitor-raspberry-pi/
