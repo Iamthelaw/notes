@@ -1894,7 +1894,7 @@ Evolution is at once hazardous and an opportunity to approach perfection. When y
 
 ### 24.2 Introduction to Refactoring
 
-The key strategy in achieving The Cardinal Rule of Software Evolution is refactoring, which Martin Fowler defines as “a change made to the internal structure of the soft- ware to make it easier to understand and cheaper to modify without changing its observable behavior” (Fowler 1999). The word “refactoring” in modern programming grew out of Larry Constantine’s original use of the word **“factoring”** in structured pro- gramming, which referred to decomposing a program into its constituent parts as much as possible (Yourdon and Constantine 1979).
+The key strategy in achieving The Cardinal Rule of Software Evolution is refactoring, which Martin Fowler defines as “a change made to the internal structure of the software to make it easier to understand and cheaper to modify without changing its observable behavior” (Fowler 1999). The word “refactoring” in modern programming grew out of Larry Constantine’s original use of the word **“factoring”** in structured programming, which referred to decomposing a program into its constituent parts as much as possible (Yourdon and Constantine 1979).
 
 #### Reasons to Refactor
 
@@ -1921,8 +1921,8 @@ The key strategy in achieving The Cardinal Rule of Software Evolution is refacto
 - Global variables are used
 - **A routine uses setup code before a routine call or takedown code after a routine call**
 - **A program contains code that seems like it might be needed someday**
-  - Requirements for the “design ahead” code haven’t been fully developed, which means the programmer will likely guess wrong about those future require- ments. The “code ahead” work will ultimately be thrown away.
-  - If the programmer’s guess about the future requirement is pretty close, the pro- grammer still will not generally anticipate all the intricacies of the future require- ment. These intricacies undermine the programmer’s basic design assumptions, which means the “design ahead” work will have to be thrown away.
+  - Requirements for the “design ahead” code haven’t been fully developed, which means the programmer will likely guess wrong about those future requirements. The “code ahead” work will ultimately be thrown away.
+  - If the programmer’s guess about the future requirement is pretty close, the programmer still will not generally anticipate all the intricacies of the future requirement. These intricacies undermine the programmer’s basic design assumptions, which means the “design ahead” work will have to be thrown away.
   - Future programmers who use the “design ahead” code don’t know that it was “design ahead” code, or they assume the code works better than it does. **They assume that the code has been coded, tested, and reviewed to the same level as the other code**. They waste a lot of time building code that uses the “design ahead” code, only to discover ultimately that the “design ahead” code doesn’t actually work.
   - The additional “design ahead” code creates additional complexity, which calls for additional testing, additional defect correction, and so on. The overall effect is to slow down the project.
 
@@ -2085,7 +2085,7 @@ Before you invest time solving a performance problem, make sure that you’re so
 
 If you know that a program’s size and speed are important, design the program’s architecture so that you can reasonably meet your size and speed goals.
 
-- Setting individual resource goals makes the system’s ultimate performance pre- dictable. If each feature meets its resource goals, the whole system will meet its goals. You can identify subsystems that have trouble meeting their goals early and target them for redesign or code tuning.
+- Setting individual resource goals makes the system’s ultimate performance predictable. If each feature meets its resource goals, the whole system will meet its goals. You can identify subsystems that have trouble meeting their goals early and target them for redesign or code tuning.
 - The mere act of making goals explicit improves the likelihood that they’ll be achieved. Programmers work to objectives when they know what they are; **the more explicit the objectives, the easier they are to work to**.
 - You can set goals that don’t achieve efficiency directly but promote efficiency in the long run. Efficiency is often best treated in the context of other issues. For example, achieving a high degree of modifiability can provide a better basis for meeting efficiency goals than explicitly setting an efficiency target. **With a highly modular, modifiable design, you can easily swap less-efficient components for more-efficient ones**.
 
@@ -2117,7 +2117,7 @@ Nonetheless, within the programming culture, writing microefficient code proves 
 #### Old Wives’ Tales
 
 - Reducing the lines of code in a high-level language improves the speed or size of the resulting machine code — false!
-- Certain operations are probably faster or smaller than others — false! You must always mea- sure performance to know whether your changes helped or hurt your program. If you want your program to be portable, techniques that improve performance in one environment can degrade it in others.
+- Certain operations are probably faster or smaller than others — false! You must always measure performance to know whether your changes helped or hurt your program. If you want your program to be portable, techniques that improve performance in one environment can degrade it in others.
 - You should optimize as you go — false!
   - **It’s almost impossible to identify performance bottlenecks before a program is working completely**. Programmers are very bad at guessing which four percent of the code accounts for 50 percent of the execution time, and so programmers who optimize as they go will, on average, spend 96 percent of their time optimizing code that doesn’t need to be optimized.
   - In the rare case in which developers identify the bottlenecks correctly, they overkill the bottlenecks they’ve identified and allow others to become critical. Again, the ultimate effect is a reduction in performance. Optimizations done after a system is complete can identify each problem area and its relative importance so that optimization time is allocated effectively.
@@ -2191,7 +2191,7 @@ In some circumstances, a table lookup might be quicker than traversing a complic
 
 #### Use Lazy Evaluation
 
-One of my former roommates was a great procrastinator. He justified his laziness by saying that many of the things people feel rushed to do simply don’t need to be done. If he waited long enough, he claimed, the things that weren’t important would be pro- crastinated into oblivion and he wouldn’t waste his time doing them.
+One of my former roommates was a great procrastinator. He justified his laziness by saying that many of the things people feel rushed to do simply don’t need to be done. If he waited long enough, he claimed, the things that weren’t important would be procrastinated into oblivion and he wouldn’t waste his time doing them.
 
 ### 26.2 Loops
 
@@ -2235,7 +2235,7 @@ It’s often more efficient to keep track of the length of the structure rather 
 
 #### Use Caching
 
-As with other optimization tech- niques, caching adds complexity and tends to be error-prone.
+As with other optimization techniques, caching adds complexity and tends to be error-prone.
 
 ### 26.4 Expressions
 
@@ -2306,8 +2306,8 @@ If you’ve been accustomed to working on small projects, your first medium-to-l
 
 ### 27.1 Communication and Size
 
-The more communication paths you have, the more time you spend communicating and the more opportunities are cre- ated for communication mistakes. Larger-size projects demand organizational tech- niques that streamline communication or limit it in a sensible way.
-The typical approach taken to streamlining communication is to formalize it in docu- ments. Instead of having 50 people talk to each other in every conceivable combina- tion, 50 people read and write documents.
+The more communication paths you have, the more time you spend communicating and the more opportunities are created for communication mistakes. Larger-size projects demand organizational techniques that streamline communication or limit it in a sensible way.
+The typical approach taken to streamlining communication is to formalize it in documents. Instead of having 50 people talk to each other in every conceivable combination, 50 people read and write documents.
 
 ### 27.2 Range of Project Sizes
 
@@ -2319,11 +2319,11 @@ On small projects, construction errors make up about 75 percent of all the error
 
 On larger projects, construction errors can taper off to about 50 percent of the total errors; requirements and architecture errors make up the difference.
 
-You would nat- urally expect a project that’s twice as large as another to have twice as many errors. But the density of defects—the number of defects per 1000 lines of code—increases.
+You would naturally expect a project that’s twice as large as another to have twice as many errors. But the density of defects—the number of defects per 1000 lines of code—increases.
 
 ### 27.4 Effect of Project Size on Productivity
 
-At small sizes (2000 lines of code or smaller), the single biggest influence on produc- tivity is the skill of the individual programmer (Jones 1998). As project size increases, team size and organization become greater influences on productivity.
+At small sizes (2000 lines of code or smaller), the single biggest influence on productivity is the skill of the individual programmer (Jones 1998). As project size increases, team size and organization become greater influences on productivity.
 
 ### 27.5 Effect of Project Size on Development Activities
 
@@ -2338,7 +2338,7 @@ Proportions of activities vary because different activities become critical at d
 
 The simplest kind of software is a single “program” that’s used by itself by the person who developed it or, informally, by a few others.
 
-A more sophisticated kind of program is a software “product,” a program that’s intended for use by people other than the original developer. A software product is used in environments that differ from the environment in which the product was cre- ated. It’s extensively tested before it’s released, it’s documented, and it’s capable of being maintained by others. A software product costs about three times as much to develop as a software program.
+A more sophisticated kind of program is a software “product,” a program that’s intended for use by people other than the original developer. A software product is used in environments that differ from the environment in which the product was created. It’s extensively tested before it’s released, it’s documented, and it’s capable of being maintained by others. A software product costs about three times as much to develop as a software program.
 
 Another level of sophistication is required to develop a group of programs that work together. Such a group is called a software “system.” Development of a system is more complicated than development of a simple program because of the complexity of developing interfaces among the pieces and the care needed to integrate the pieces.
 
@@ -2346,11 +2346,11 @@ System products cost about nine times as much as simple programs
 
 #### Methodology and Size
 
-In social settings, the more formal the event, the more uncomfortable your clothes have to be (high heels, neckties, and so on). In software development, the more formal the project, the more paper you have to generate to make sure you’ve done your home- work.
+In social settings, the more formal the event, the more uncomfortable your clothes have to be (high heels, neckties, and so on). In software development, the more formal the project, the more paper you have to generate to make sure you’ve done your homework.
 
 the more people’s brains you have to coordinate, the more formal documentation you need to coordinate them.
 
-The point of your writing the plan is to force you to think carefully about configura- tion management and to explain your plan to everyone else. The documentation is a tangible side effect of the real work you do as you plan and construct a software sys- tem. If you feel as though you’re going through the motions and writing generic doc- uments, something is wrong.
+The point of your writing the plan is to force you to think carefully about configuration management and to explain your plan to everyone else. The documentation is a tangible side effect of the real work you do as you plan and construct a software system. If you feel as though you’re going through the motions and writing generic documents, something is wrong.
 
 ## Chapter 28 Managing Construction
 
@@ -2361,7 +2361,7 @@ touch with production coding issues. Programmers will resent that kind of “arc
 
 #### Considerations in Setting Standards
 
-Some developers wel- come standards because they reduce arbitrary variance in the project.
+Some developers welcome standards because they reduce arbitrary variance in the project.
 
 #### Techniques for Encouraging Good Coding
 
@@ -2385,13 +2385,13 @@ In doing so, you provide **a clear example of the quality you’re aiming for**.
 
 ##### Emphasize that code listings are public assets
 
-Extreme Programming’s idea of col- lective ownership
+Extreme Programming’s idea of collective ownership
 
 ##### Reward good code
 
 Use your organization’s reward system to reinforce good coding practices.
 
-- The reward should be something that the programmer wants. (Many program- mers find “attaboy” rewards distasteful, especially when they come from non- technical managers.)
+- The reward should be something that the programmer wants. (Many programmers find “attaboy” rewards distasteful, especially when they come from nontechnical managers.)
 - Code that receives an award should be exceptionally good. If you give an award to a programmer everyone else knows does bad work, you look like Homer Simpson trying to run a nuclear reactor. It doesn’t matter that the programmer has a cooperative attitude or always comes to work on time. You lose credibility if your reward doesn’t match the technical merits of the situation. If you’re not technically skilled enough to make the good-code judgment, don’t! Don’t make the award at all, or let your team choose the recipient.
 
 ##### One easy standard
@@ -2402,15 +2402,15 @@ Use your organization’s reward system to reinforce good coding practices.
 
 #### Requirements and Design Changes
 
-During development, you’re bound to be bristling with ideas about how to improve the system. If you implement each change as it occurs to you, you’ll soon find yourself walk- ing on a software treadmill—for all that the system will be changing, it won’t be moving closer to completion.
+During development, you’re bound to be bristling with ideas about how to improve the system. If you implement each change as it occurs to you, you’ll soon find yourself walking on a software treadmill—for all that the system will be changing, it won’t be moving closer to completion.
 
 Here are some guidelines for controlling design changes:
 
 - Follow a systematic change-control procedure
 - Handle change requests in groups. It’s tempting to implement easy changes as ideas arise. write down all ideas and suggestions, no matter how easy they would be to implement, and save them until you have time to work on them. Then, viewing them as a group, choose the ones that will be the most beneficial.
-- Estimate the cost of each change. Let all the interested par- ties know that software is intricately interwoven and that time estimation is necessary even if the change appears small at first glance.
+- Estimate the cost of each change. Let all the interested parties know that software is intricately interwoven and that time estimation is necessary even if the change appears small at first glance.
 - Be wary of high change volumes. a high volume of change requests is a key warning sign that requirements, architecture, or top-level designs weren’t done well enough to support effective construction.
-- Establish a change-control board or its equivalent in a way that makes sense for your project. The board meets periodically to review proposed changes. It approves, disapproves, or defers each change. Change-control boards are considered a best practice for prioritiz- ing and controlling requirements changes
+- Establish a change-control board or its equivalent in a way that makes sense for your project. The board meets periodically to review proposed changes. It approves, disapproves, or defers each change. Change-control boards are considered a best practice for prioritizing and controlling requirements changes
 - Watch for bureaucracy, but don’t let the fear of bureaucracy preclude effective change control
 
 #### Software Code Changes
@@ -2469,17 +2469,17 @@ In general, the more detailed your examination is, the more accurate your estima
 
 ##### Hope that you’ll catch up
 
-One survey of over 300 software projects concluded that delays and over- runs generally increase toward the end of a project (van Genuchten 1991). **Projects don’t make up lost time later; they fall further behind**.
+One survey of over 300 software projects concluded that delays and overruns generally increase toward the end of a project (van Genuchten 1991). **Projects don’t make up lost time later; they fall further behind**.
 
 ##### Expand the team
 
-**It’s like adding gas to a fire.** And merely increasing the number of people increases the com- plexity and amount of project communication.
+**It’s like adding gas to a fire.** And merely increasing the number of people increases the complexity and amount of project communication.
 
-Manag- ers need to understand that developing software isn’t like riveting sheet metal: more workers working doesn’t necessarily mean more work will get done.
+Managers need to understand that developing software isn’t like riveting sheet metal: more workers working doesn’t necessarily mean more work will get done.
 
 ##### Reduce the scope of the project
 
-If you eliminate a feature, you eliminate the design, cod- ing, debugging, testing, and documentation of that feature. You eliminate that fea- ture’s interface to other features.
+If you eliminate a feature, you eliminate the design, coding, debugging, testing, and documentation of that feature. You eliminate that feature’s interface to other features.
 
 Short of dropping a feature altogether, you can provide a cheaper version of the same functionality. 
 
@@ -2510,7 +2510,7 @@ Here’s a list of religious issues:
 - Choice of IDE
 - Commenting style
 - Efficiency vs. readability tradeoffs
-- Choice of methodology—for example, Scrum vs. Extreme Programming vs. evo- lutionary delivery
+- Choice of methodology—for example, Scrum vs. Extreme Programming vs. evolutionary delivery
 - Programming utilities
 - Naming conventions
 - Use of gotos
@@ -2521,7 +2521,7 @@ If you think you need to control a programmer in any of these religious areas, c
 
 - Be aware that you’re dealing with a sensitive area
 - Use “suggestions” or “guidelines” with respect to the area
-- Finesse the issues you can by sidestepping explicit mandates. **To finesse indentation style or brace placement, require source code to be run through a pretty-printer for- matter before it’s declared finished. Let the pretty printer do the formatting**.
+- Finesse the issues you can by sidestepping explicit mandates. **To finesse indentation style or brace placement, require source code to be run through a pretty-printer formatter before it’s declared finished. Let the pretty printer do the formatting**.
 - Have your programmers develop their own standards
 
 #### Physical Environment
@@ -2613,7 +2613,7 @@ The problem with this is that if the build is broken one week, you might go for 
 
 ##### Require developers to smoke test their code before adding it to the system
 
-Developers need to test their own code before they add it to the build. A developer can do this by cre- ating a private build of the system on a personal machine, which the developer then tests individually.
+Developers need to test their own code before they add it to the build. A developer can do this by creating a private build of the system on a personal machine, which the developer then tests individually.
 
 ##### Create a holding area for code that’s to be added to the build
 
@@ -2625,11 +2625,11 @@ Make it clear from the beginning that keeping the build healthy is one of the pr
 
 ##### Release builds in the morning
 
-Some groups have found that they prefer to build over- night, smoke test in the early morning, and release new builds in the morning rather than the afternoon.
+Some groups have found that they prefer to build overnight, smoke test in the early morning, and release new builds in the morning rather than the afternoon.
 
 ##### Build and smoke test even under pressure
 
-Under stress, developers lose some of their discipline. They feel pres- sure to take construction shortcuts that they would not take under less stressful circum- stances. They review and test their own code less carefully than usual. The code tends toward a state of entropy more quickly than it does during less stressful times.
+Under stress, developers lose some of their discipline. They feel pressure to take construction shortcuts that they would not take under less stressful circumstances. They review and test their own code less carefully than usual. The code tends toward a state of entropy more quickly than it does during less stressful times.
 
 #### What Kinds of Projects Can Use the Daily Build Process?
 
@@ -2639,7 +2639,7 @@ Developers frequently get out of sync when they make larger-scale changes.
 
 ## Chapter 30 Programming Tools
 
-Use of a leading-edge tool set—and familiarity with the tools used—can increase pro- ductivity by 50 percent or more (Jones 2000; Boehm et al. 2000).
+Use of a leading-edge tool set—and familiarity with the tools used—can increase productivity by 50 percent or more (Jones 2000; Boehm et al. 2000).
 
 ### 30.1 Design Tools
 
@@ -2661,7 +2661,7 @@ If that’s the case, spending a few extra dollars for the best possible IDE is 
 
 ##### Source-Code Beautifiers
 
-This capability is useful when work- ing with large quantities of legacy code. 
+This capability is useful when working with large quantities of legacy code. 
 
 ##### Interface Documentation Tools
 
@@ -2689,7 +2689,7 @@ This capability is useful when work- ing with large quantities of legacy code.
 
 #### Data Dictionaries
 
-A data dictionary is a database that describes all the significant data in a project. In many cases, the data dictionary focuses primarily on database schemas. On large projects, a data dictionary is also useful for keeping track of the hundreds or thou- sands of class definitions. 
+A data dictionary is a database that describes all the significant data in a project. In many cases, the data dictionary focuses primarily on database schemas. On large projects, a data dictionary is also useful for keeping track of the hundreds or thousands of class definitions. 
 
 ### 30.3 Executable-Code Tools
 
@@ -2731,7 +2731,7 @@ Most medium-sized and large projects need special tools unique to the project. F
 
 ### 30.6 Tool Fantasyland
 
-Over the past several decades, programmers have seen numerous tools that were supposed to eliminate programming. First it was third-generation languages. Then it was fourth generation languages. Then it was automatic programming. Then it was CASE tools. Then it was visual programming. Each of these advances spun off valuable, incre- mental improvements to computer programming—and collectively they have made pro- gramming unrecognizable to anyone who learned programming before these advances. But none of these innovations succeeded in eliminating programming.
+Over the past several decades, programmers have seen numerous tools that were supposed to eliminate programming. First it was third-generation languages. Then it was fourth generation languages. Then it was automatic programming. Then it was CASE tools. Then it was visual programming. Each of these advances spun off valuable, incremental improvements to computer programming—and collectively they have made programming unrecognizable to anyone who learned programming before these advances. But none of these innovations succeeded in eliminating programming.
 
 ## Chapter 31 Layout and Style
 
@@ -2763,7 +2763,7 @@ Over the past several decades, programmers have seen numerous tools that were su
 
 #### Parentheses
 
-> you should use paren- theses whenever there’s any doubt about how an expression is evaluated
+> you should use parentheses whenever there’s any doubt about how an expression is evaluated
 
 ### 31.3 Layout Styles
 
@@ -2804,7 +2804,7 @@ With modern technology, it’s probably all right to exceed 80 columns occasiona
 
 ##### Unit development folders
 
-A unit-development folder (UDF), or software-develop- ment folder (SDF), is an informal document that contains notes used by a developer during construction. A “unit” is loosely defined, usually to mean a class, although it could also mean a package or a component. The main purpose of a UDF is to provide a trail of design decisions that aren’t documented elsewhere.
+A unit-development folder (UDF), or software-development folder (SDF), is an informal document that contains notes used by a developer during construction. A “unit” is loosely defined, usually to mean a class, although it could also mean a package or a component. The main purpose of a UDF is to provide a trail of design decisions that aren’t documented elsewhere.
 
 ##### Detailed-design document
 
@@ -2812,7 +2812,7 @@ A unit-development folder (UDF), or software-develop- ment folder (SDF), is an i
 
 ### 32.3 To Comment or Not to Comment
 
-Comments are easier to write poorly than well, and commenting can be more damag- ing than helpful.
+Comments are easier to write poorly than well, and commenting can be more damaging than helpful.
 
 > Design routines in pseudocode, and then convert the pseudocode to comments and fill in the code between them
 
@@ -2840,9 +2840,9 @@ A six-month study conducted by IBM found that maintenance programmers “most of
 
 A commenting style that requires a lot of busy work is a maintenance headache.
 
-The time you spend “commenting” is really time spent understand- ing the program better, which is time that needs to be spent regardless of whether you comment.
+The time you spend “commenting” is really time spent understanding the program better, which is time that needs to be spent regardless of whether you comment.
 
-> If you spend a lot of time entering and deleting dashes to make plus signs line up, you’re not pro- gramming; you’re wasting time.
+> If you spend a lot of time entering and deleting dashes to make plus signs line up, you’re not programming; you’re wasting time.
 
 ##### Use the Pseudocode Programming Process to reduce commenting time
 
@@ -2862,7 +2862,7 @@ Commenting done later takes more time because you have to remember or figure out
 
 #### Commenting Individual Lines
 
-Here are two pos- sible reasons a line of code would need a comment:
+Here are two possible reasons a line of code would need a comment:
 
 - The single line is complicated enough to need an explanation.
 - The single line once had an error, and you want a record of the error.
@@ -2882,7 +2882,7 @@ Comments that explain how something is done usually operate at the programming-l
 - Use comments to prepare the reader for what is to follow
 - Avoid abbreviations
 - Comment anything that gets around an error or an undocumented feature in a language or an environment
-- Justify violations of good programming style. If you’ve had to violate good program- ming style, explain why
+- Justify violations of good programming style. If you’ve had to violate good programming style, explain why
 
 > Commenting tricky code is exactly the wrong approach to take.
 
@@ -2899,7 +2899,7 @@ This advice applies mainly to code you’re writing for the first time
 - Comment coded meanings
 - Comment limitations on input data. Make sure that expected and unexpected values are documented
 - Document flags to the bit level
-- Stamp comments related to a variable with the variable’s name. That way, string searches for the vari- able name will find the comment as well as the variable
+- Stamp comments related to a variable with the variable’s name. That way, string searches for the variable name will find the comment as well as the variable
 
 #### Commenting Control Structures
 
@@ -2920,85 +2920,48 @@ Many textbooks urge you to pile up a stack of information at the top of every ro
 
 #### Commenting Classes, Files, and Programs
 
-##### General Guidelines for Class Documentation
-
-###### Describe the design approach to the class
-
-###### Describe limitations, usage assumptions, and so on
-
-###### Comment the class interface
-
-###### Don’t document implementation details in the class interface
-
-Consequently, class interface files should contain information needed to use the class but not information needed to implement or maintain the inner workings of the class.
-
-##### General Guidelines for File Documentation
-
-###### Describe the purpose and contents of each file
-
-###### Put your name, e-mail address, and phone number in the block comment
-
-###### Include a version-control tag
-
-###### Include legal notices in the block comment
-
-###### Give the file a name related to its contents
-
-##### The Book Paradigm for Program Documentation
-
-In the Book Paradigm, code and its docu- mentation are organized into several components similar to the components of a book to help programmers get a high-level view of the program.
-
-Oman and Cook concluded that by paying attention to the typographic principles of book design, you can get a 10 to 20 percent improvement in comprehension.
+- General Guidelines for Class Documentation
+    - Describe the design approach to the class
+    - Describe limitations, usage assumptions, and so on
+    - Comment the class interface
+    - Don’t document implementation details in the class interface. Consequently, class interface files should contain information needed to use the class but not information needed to implement or maintain the inner workings of the class.
+- General Guidelines for File Documentation
+    - Describe the purpose and contents of each file
+    - Put your name, e-mail address, and phone number in the block comment
+    - Include a version-control tag
+    - Include legal notices in the block comment
+    - Give the file a name related to its contents
+- The Book Paradigm for Program Documentation. In the Book Paradigm, code and its documentation are organized into several components similar to the components of a book to help programmers get a high-level view of the program.
 
 ### 32.6 IEEE Standards
 
-IEEE standards are developed by groups composed of practitioners and acade- micians who are expert in a particular area. 
+IEEE standards are developed by groups composed of practitioners and academicians who are expert in a particular area. 
 
 ## Chapter 33 Personal Character
 
 ### 33.1 Isn’t Personal Character Off the Topic?
 
-We’ve all had projects in which we spent 80 percent of the time working on a small piece we found interesting and 20 percent of the time build- ing the other 80 percent of the program.
+> We’ve all had projects in which we spent 80 percent of the time working on a small piece we found interesting and 20 percent of the time building the other 80 percent of the program.
 
 If you want to be great, you’re responsible for making yourself great. It’s a matter of your personal character.
 
 ### 33.2 Intelligence and Humility
 
-Empirically, however, it’s been shown that humble programmers who compensate for their fallibilities write code that’s easier for themselves and others to understand and that has fewer errors.
+Empirically it’s been shown that humble programmers who compensate for their fallibilities write code that’s easier for themselves and others to understand and that has fewer errors.
 
 ### 33.3 Curiosity
 
-Once you admit that your brain is too small to understand most programs and you realize that effective programming is a search for ways to offset that fact, you begin a career-long search for ways to compensate.
+Once you admit that your brain is too small to understand most programs and you realize that effective programming is a search for ways to offset that fact, you begin a careerlong search for ways to compensate.
 
-###### Build your awareness of the development process
-
-If you’re working in a competitive software market, half of what you now need to know to do your job will be out of date in three years. If you’re not learning, you’re turning into a dinosaur.
-
-> If you can’t learn at your job, find a new one.
-
-###### Experiment
-
-###### Read about problem solving
-
-Problem solving is the core activity in building computer software
-
-###### Analyze and plan before you act
-
-###### Learn about successful projects
-
-One especially good way to learn about program- ming is to study the work of the great programmers.
-
-###### Read!
-
-###### Read other books and periodicals
-
-Pat yourself on the back for reading this book.
-
-###### Affiliate with other professionals
-
-###### Make a commitment to professional development
-
-Good programmers constantly look for ways to become better. 
+- **Build your awareness of the development process** If you’re working in a competitive software market, half of what you now need to know to do your job will be out of date in three years. If you’re not learning, you’re turning into a dinosaur.
+- **Experiment**
+- **Read about problem solving** Problem solving is the core activity in building computer software
+- **Analyze and plan before you act**
+- **Learn about successful projects** One especially good way to learn about programming is to study the work of the great programmers
+- **Read!**
+- **Read other books and periodicals** Pat yourself on the back for reading this book
+- **Affiliate with other professionals**
+- **Make a commitment to professional development** Good programmers constantly look for ways to become better
 
 ### 33.4 Intellectual Honesty
 
@@ -3007,19 +2970,13 @@ Part of maturing as a programming professional is developing an uncompromising s
 - **Refusing to pretend you’re an expert when you’re not**
 - Readily admitting your mistakes
 - **Trying to understand a compiler warning rather than suppressing the message**
-- Clearly understanding your program—not compiling it to see if it works
+- Clearly understanding your program — not compiling it to see if it works
 - Providing realistic status reports
-- **Providing realistic schedule estimates** and holding your ground when manage- ment asks you to adjust them
+- **Providing realistic schedule estimates** and holding your ground when management asks you to adjust them
 
-One example is running the program to see whether you should use < or <=.
+> Programmers are notorious for saying that a program is “90 percent complete” during the last 50 percent of the project.
 
-Programmers are notorious for say- ing that a program is “90 percent complete” during the last 50 percent of the project.
-
-“We found that technical people, in general, were actually very good at estimating project require- ments and schedules. The problem they had was defending their decisions; they needed to learn how to hold their ground”
-
-We can eliminate features, reduce performance, develop the project in increments, or use fewer people and a longer schedule or more people and a shorter schedule.”
-
-If a certain software capability is worth $250K to a company and you esti- mate it will cost $750K to develop, the company shouldn’t develop the software.
+If a certain software capability is worth $250K to a company and you estimate it will cost $750K to develop, the company shouldn’t develop the software.
 
 ### 33.5 Communication and Cooperation
 
@@ -3027,31 +2984,27 @@ Programming is communicating with another programmer first and communicating wit
 
 ### 33.6 Creativity and Discipline
 
-It’s hard to explain to a fresh computer-science graduate why you need conventions and engineering discipline.
-
-Some creative programmers view the discipline of standards and conventions as sti- fling to their creativity. The opposite is true.
-
-Establish conventions in non- critical areas so that you can focus your creative energies in the places that count.
+Some creative programmers view the discipline of standards and conventions as stifling to their creativity. The opposite is true. Establish conventions in noncritical areas so that you can focus your creative energies in the places that count.
 
 ### 33.7 Laziness
 
-It manifests itself again in the habit of compiling a class to see if it works so that you can avoid the exercise of checking the class with your mind.
+It manifests itself in the habit of compiling a class to see if it works so that you can avoid the exercise of checking the class with your mind.
 
-This habit is “enlight- ened laziness”—the second kind of laziness. You’re still lazy, but you’re getting around the problem by spending the smallest possible amount of time on something that’s unpleasant.
+The second kind of laziness is “enlightened laziness”. You’re still lazy, but you’re getting around the problem by spending the smallest possible amount of time on something that’s unpleasant.
 
-The third option is to write a tool to do the unpleasant task. This is “long-term lazi- ness.” It is undoubtedly the most productive kind of laziness (provided that you ulti- mately save time by having written the tool). In these contexts, a certain amount of laziness is beneficial.
+The third is “long-term laziness.” It is undoubtedly the most productive kind of laziness (provided that you ultimately save time by having written the tool). In these contexts, a certain amount of laziness is beneficial.
 
-When you step through the looking glass, you see the other side of the laziness pic- ture. “Hustle” or “making an effort” doesn’t have the rosy glow it does in high-school physical education class. Hustle is extra, unnecessary effort. It shows that you’re eager but not that you’re getting your work done. It’s easy to confuse motion with progress, busyness with being productive. 
+When you step through the looking glass, you see the other side of the laziness picture. “Hustle” or “making an effort” doesn’t have the rosy glow it does in high-school physical education class. Hustle is extra, unnecessary effort. It shows that you’re eager but not that you’re getting your work done. **It’s easy to confuse motion with progress, busyness with being productive**. 
 
 ### 33.8 Characteristics That Don’t Matter As Much As You Might Think
 
 #### Persistence
 
-Most of the time, persistence in software development is pigheadedness—it has little value. Persistence when you’re stuck on a piece of new code is hardly ever a virtue. Try redesigning the class, try an alternative coding approach, or try coming back to it later.
+Most of the time, persistence in software development is pigheadedness — it has little value. Persistence when you’re stuck on a piece of new code is hardly ever a virtue. Try redesigning the class, try an alternative coding approach, or try coming back to it later.
 
-In debugging, it can be mighty satisfying to track down the error that has been annoy- ing you for four hours, but it’s often better to give up on the error after a certain amount of time with no progress—say 15 minutes. Let your subconscious chew on the problem for a while. Try to think of an alternative approach that would circumvent the problem altogether. Rewrite the troublesome section of code from scratch. Come back to it later when your mind is fresh. Fighting computer problems is no virtue. Avoiding them is better.
+In debugging, it can be mighty satisfying to track down the error that has been annoying you for four hours, but it’s often better to give up on the error after a certain amount of time with no progress — say 15 minutes. Let your subconscious chew on the problem for a while. Try to think of an alternative approach that would circumvent the problem altogether. Rewrite the troublesome section of code from scratch. Come back to it later when your mind is fresh. Fighting computer problems is no virtue. Avoiding them is better.
 
-> It’s hard to know when to give up, but it’s essential that you ask
+> It’s hard to know when to give up, but it’s essential that you ask.
 
 If I don’t solve the problem using this approach within the next 30 minutes, I’ll take 10 minutes to brainstorm about different approaches and try the best one for the next hour.
 
@@ -3061,27 +3014,21 @@ In software development, even basic knowledge changes rapidly.
 
 Older programmers tend to be viewed with suspicion not just because they might be out of touch with specific technology but because they might never have been exposed to basic programming concepts that became well known after they left school.
 
-“We want a programmer with five years of C programming experience” is a silly state- ment. If a programmer hasn’t learned C after a year or two, the next three years won’t make much difference. This kind of “experience” has little relationship to performance.
-
 Older programmers sometimes feel they’ve already earned their stripes and resent having to prove themselves year after year.
 
 #### Gonzo Programming
 
-Those all-night programming stints make you feel like the greatest pro- grammer in the world, but then you have to spend several weeks correcting the defects you installed during your blaze of glory.
+Those all-night programming stints make you feel like the greatest programmer in the world, but then you have to spend several weeks correcting the defects you installed during your blaze of glory.
 
 ### 33.9 Habits
 
-When was the last time you seri- ously questioned your formatting style?
+When was the last time you seriously questioned your formatting style?
 
-For example, programmers tend to check loop indexes carefully and not to check assignment statements, which makes errors in assignment statements much harder to find than errors in loop indexes
-
-If you have to choose between making code fast and making it readable, and you make the same choice every time, you’re not really choosing—you’re responding out of habit.
+If you have to choose between making code fast and making it readable, and you make the same choice every time, you’re not really choosing — **you’re responding out of habit**.
 
 After you’ve been programming a long time, it’s hard to suddenly start saying, “How do I make this loop faster?” or “How do I make this code more readable?” These are habits that good programmers develop early.
 
-You can’t replace a bad habit with no habit at all.
-
-It’s easier to replace an old habit with a new one than it is to eliminate one altogether. In program- ming, try to develop new habits that work. Develop the habits of writing a class in pseudocode before coding it and carefully reading the code before compiling it, for instance.
+It’s easier to replace an old habit with a new one than it is to eliminate one altogether. In programming, try to develop new habits that work. Develop the habits of writing a class in pseudocode before coding it and carefully reading the code before compiling it, for instance.
 
 > Your personal character directly affects your ability to write computer programs.
 
@@ -3089,23 +3036,19 @@ It’s easier to replace an old habit with a new one than it is to eliminate one
 
 ### 34.1 Conquer Complexity
 
-- Dividing a system into subsystems at the architecture level so that your brain can focus on a smaller amount of the system at one time.
-- Carefully defining class interfaces so that you can ignore the internal workings of the class.
-- Preserving the abstraction represented by the class interface so that your brain doesn’t have to remember arbitrary details.
-- Avoiding global data, because global data vastly increases the percentage of the code you need to juggle in your brain at any one time.
-- Avoiding deep inheritance hierarchies because they are intellectually demanding.
-- Avoiding deep nesting of loops and conditionals because they can be replaced by simpler control structures that burn up fewer gray cells.
-- Avoiding gotos because they introduce nonlinearity that has been found to be difficult for most people to follow.
-- Carefully defining your approach to error handling rather than using an arbi- trary proliferation of different error-handling techniques.
-- Being systematic about the use of the built-in exception mechanism, which can become a nonlinear control structure that’s about as hard to understand as gotos if not used with discipline.
-- Not allowing classes to grow into monster classes that amount to whole pro- grams in themselves.
-- Keeping routines short.
-- Using clear, self-explanatory variable names so that your brain doesn’t have to waste cycles remembering details like “i stands for the account index, and j stands for the customer index, or was it the other way around?”
-- Minimizing the number of parameters passed to a routine, or, more important, passing only the parameters needed to preserve the routine interface’s abstraction.
-- Using conventions to spare your brain the challenge of remembering arbitrary, accidental differences between different sections of code.
-- In general, attacking what Chapter 5 describes as “accidental difficulties” wher- ever possible.
+- **Dividing a system** into subsystems at the architecture level so that your brain can focus on a smaller amount of the system at one time
+- Carefully **defining class interfaces** so that you can ignore the internal workings of the class
+- Preserving the abstraction represented by the class interface so that your brain doesn’t have to remember arbitrary details
+- **Avoiding deep inheritance** hierarchies because they are intellectually demanding
+- **Avoiding deep nesting of loops** and conditionals because they can be replaced by simpler control structures that burn up fewer gray cells.
+- Carefully defining your approach to error handling rather than using an arbitrary proliferation of different error-handling techniques.
+- **Not allowing classes to grow into monster** classes that amount to whole programs in themselves
+- **Keeping routines short**
+- Using clear, **self-explanatory variable names** so that your brain doesn’t have to waste cycles remembering details like “i stands for the account index, and j stands for the customer index, or was it the other way around?”
+- Minimizing the number of parameters passed to a routine, or, more important, passing only the parameters needed to preserve the routine interface’s abstraction
+- **Using conventions** to spare your brain the challenge of remembering arbitrary, accidental differences between different sections of code.
 
-In summary, a primary goal of software design and construction is conquering com- plexity.
+In summary, a primary goal of software design and construction is conquering complexity.
 
 ### 34.2 Pick Your Process
 
@@ -3115,26 +3058,23 @@ The way in which people work together determines whether their abilities are add
 
 If you don’t know what you’re building, you can’t very well create a superior design for it. 
 
-If you rush to coding before the foundation is complete, it will be harder to make fundamental changes in the sys- tem’s architecture. 
+If you rush to coding before the foundation is complete, it will be harder to make fundamental changes in the system’s architecture. 
 
 Testing won’t make your program more usable, faster, smaller, more readable, or more extensible.
 
 ### 34.3 Write Programs for People First, Computers Second
 
-Maintenance programmers spend 50 to 60 percent of their time trying to understand the code they have to maintain, and they appreciate the time you put into documenting it
+Maintenance programmers spend 50 to 60 percent of their time trying to understand the code they have to maintain, and they appreciate the time you put into documenting it.
 
 ### 34.4 Program into Your Language, Not in It
 
-Don’t limit your programming thinking only to the concepts that are supported auto- matically by your language.
+Don’t limit your programming thinking only to the concepts that are supported automatically by your language.
 
 You don’t need to use global data or gotos just because your language supports them.
 
-
 ### 34.5 Focus Your Attention with the Help of Conventions
 
-Conventions add predictability to low-level tasks.
-
-Programmers on large projects sometimes go overboard with conventions. They establish so many standards and guidelines that remembering them becomes a full- time job. But programmers on small projects tend to go “underboard,” not realizing the full benefits of intelligently conceived conventions. You should understand their real value and take advantage of them; you should use them to provide structure in areas in which structure is needed.
+Programmers on large projects sometimes go overboard with conventions. They establish so many standards and guidelines that remembering them becomes a fulltime job. But programmers on small projects tend to go “underboard,” not realizing the full benefits of intelligently conceived conventions. You should understand their real value and take advantage of them; you should use them to provide structure in areas in which structure is needed.
 
 ### 34.6 Program in Terms of the Problem Domain
 
@@ -3142,24 +3082,6 @@ One way of working at a high level of abstraction is to work in terms of the pro
 
 ### 34.7 Watch for Falling Rocks
 
-“Tricky code” is a code phrase for “bad code.” If you think code is tricky, think about rewriting it so that it’s not.
+“Tricky code” is a code phrase for “bad code.” **If you think code is tricky, think about rewriting it so that it’s not**.
 
 A class’s having more errors than average is a warning sign. A few error-prone classes tend to be the most expensive part of a program.
-
-### 34.8 Iterate, Repeatedly, Again and Again
-
-### 34.9 Thou Shalt Rend Software and Religion Asunder
-
-## Chapter 35 Where to Find More Information
-
-### 35.1 Information About Software Construction
-
-### 35.2 Topics Beyond Construction
-
-### 35.3 Periodicals
-
-### 35.4 A Software Developer’s Reading Plan
-
-This section describes the reading program that a software developer needs to work through to achieve full professional standing at my company, Construx Software.
-
-### 35.5 Joining a Professional Organization
