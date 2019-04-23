@@ -2546,17 +2546,12 @@ When the classes are finally combined and errors surface by the score, programme
 
 #### Benefits of Incremental Integration
 
-##### Errors are easy to locate
-
-##### The system succeeds early in the project
-
-##### You get improved progress monitoring
-
-##### You’ll improve customer relations
-
-##### The units of the system are tested more fully
-
-##### You can build the system with a shorter development schedule
+- Errors are easy to locate
+- The system succeeds early in the project
+- You get improved progress monitoring
+- You’ll improve customer relations
+- The units of the system are tested more fully
+- You can build the system with a shorter development schedule
 
 ### 29.3 Incremental Integration Strategies
 
@@ -2645,80 +2640,6 @@ Use of a leading-edge tool set—and familiarity with the tools used—can incre
 
 In one sense, these design tools are just fancy drawing packages. Using a simple graphics package or pencil and paper, you can draw everything that the tool can draw.
 
-### 30.2 Source-Code Tools
-
-#### Editing
-
-##### Integrated Development Environments (IDEs)
-
-If that’s the case, spending a few extra dollars for the best possible IDE is a good investment.
-
-##### Multiple-File String Searching and Replacing
-
-##### Diff Tools
-
-##### Merge Tools
-
-##### Source-Code Beautifiers
-
-This capability is useful when working with large quantities of legacy code. 
-
-##### Interface Documentation Tools
-
-##### Templates
-
-##### Cross-Reference Tools
-
-##### Class Hierarchy Generators
-
-#### Analyzing Code Quality
-
-##### Picky Syntax and Semantics Checkers
-
-##### Metrics Reporters
-
-#### Refactoring Source Code
-
-##### Refactorers
-
-##### Restructurers
-
-##### Code Translators
-
-#### Version Control
-
-#### Data Dictionaries
-
-A data dictionary is a database that describes all the significant data in a project. In many cases, the data dictionary focuses primarily on database schemas. On large projects, a data dictionary is also useful for keeping track of the hundreds or thousands of class definitions. 
-
-### 30.3 Executable-Code Tools
-
-#### Code Creation
-
-##### Compilers and Linkers
-
-##### Build Tools
-
-##### Code Libraries
-
-##### Code-Generation Wizards
-
-##### Setup and Installation
-
-##### Preprocessors
-
-#### Debugging
-
-#### Testing
-
-#### Code Tuning
-
-##### Execution Profilers
-
-##### Assembler Listings and Disassemblers
-
-### 30.4 Tool-Oriented Environments
-
 ### 30.5 Building Your Own Programming Tools
 
 #### Project-Specific Tools
@@ -2729,74 +2650,7 @@ Most medium-sized and large projects need special tools unique to the project. F
 
 #### Scripts
 
-### 30.6 Tool Fantasyland
-
-Over the past several decades, programmers have seen numerous tools that were supposed to eliminate programming. First it was third-generation languages. Then it was fourth generation languages. Then it was automatic programming. Then it was CASE tools. Then it was visual programming. Each of these advances spun off valuable, incremental improvements to computer programming—and collectively they have made programming unrecognizable to anyone who learned programming before these advances. But none of these innovations succeeded in eliminating programming.
-
 ## Chapter 31 Layout and Style
-
-> Programmers who take pride in their work derive great artistic satisfaction from polishing the visual structure of their code
-
-### 31.1 Layout Fundamentals
-
-#### Layout Extremes
-
-#### The Fundamental Theorem of Formatting
-
-#### Human and Computer Interpretations of a Program
-
-> a good layout scheme would make the visual structure of a program match the logical structure, or tell the same story to the human that it tells to the computer.
-
-#### How Much Is Good Layout Worth?
-
-#### Layout as Religion
-
-#### Objectives of Good Layout
-
-### 31.2 Layout Techniques
-
-#### White Space
-
-- Grouping
-- Blank lines
-- Indentation
-
-#### Parentheses
-
-> you should use parentheses whenever there’s any doubt about how an expression is evaluated
-
-### 31.3 Layout Styles
-
-### 31.4 Laying Out Control Structures
-
-### 31.5 Laying Out Individual Statements
-
-#### Statement Length
-
-- Lines longer than 80 characters are hard to read.
-- The 80-character limitation discourages deep nesting.
-- Lines longer than 80 characters often won’t fit on 8.5” x 11” paper, especially when code is printed “2 up” (2 pages of code to each physical printout page).
-
-With modern technology, it’s probably all right to exceed 80 columns occasionally.
-
-#### Using Spaces for Clarity
-
-#### Formatting Continuation Lines
-
-#### Using Only One Statement Per Line
-
-#### Laying Out Data Declarations
-
-### 31.6 Laying Out Comments
-
-- Indent a comment with its corresponding code
-- Set off each comment with at least one blank line
-
-### 31.7 Laying Out Routines
-
-### 31.8 Laying Out Classes
-
-#### Laying Out Class Interfaces
 
 ## Chapter 32 Self-Documenting Code
 
@@ -2814,45 +2668,22 @@ A unit-development folder (UDF), or software-development folder (SDF), is an inf
 
 Comments are easier to write poorly than well, and commenting can be more damaging than helpful.
 
-> Design routines in pseudocode, and then convert the pseudocode to comments and fill in the code between them
+> Design routines in pseudocode, and then convert the pseudocode to comments and fill in the code between them.
 
 ### 32.4 Keys to Effective Comments
 
 #### Kinds of Comments
 
-##### Repeat of the Code
-
-##### Explanation of the Code
-
-they are useful, but usually that’s only because the code is confusing
-
-##### Marker in the Code
-
-##### Summary of the Code
-
-Such comments are more valuable than comments that merely repeat the code because a reader can scan them more quickly than the code.
-
-##### Description of the Code’s Intent
-
-A six-month study conducted by IBM found that maintenance programmers “most often said that understanding the original programmer’s intent was the most difficult problem”
-
-#### Commenting Efficiently
-
-A commenting style that requires a lot of busy work is a maintenance headache.
-
-The time you spend “commenting” is really time spent understanding the program better, which is time that needs to be spent regardless of whether you comment.
-
-> If you spend a lot of time entering and deleting dashes to make plus signs line up, you’re not programming; you’re wasting time.
-
-##### Use the Pseudocode Programming Process to reduce commenting time
-
-##### Integrate commenting into your development style
-
-Commenting done later takes more time because you have to remember or figure out what the code is doing instead of just writing down what you’re already thinking about.
-
-> If your design is hard to code, simplify the design before you worry about comments or code.
-
-##### Performance is not a good reason to avoid commenting
+- Repeat of the Code
+- **Explanation of the Code** They are useful, but usually that’s only because the code is confusing
+- Marker in the Code
+- **Summary of the Code** Such comments are more valuable than comments that merely repeat the code because a reader can scan them more quickly than the code.
+- **Description of the Code’s Intent** A six-month study conducted by IBM found that maintenance programmers “most often said that understanding the original programmer’s intent was the most difficult problem”
+- **Commenting Efficiently**
+    > The time you spend “commenting” is really time spent understanding the program better, which is time that needs to be spent regardless of whether you comment.
+- Use the Pseudocode Programming Process to reduce commenting time
+- **Integrate commenting into your development style** Commenting done later takes more time because you have to remember or figure out what the code is doing instead of just writing down what you’re already thinking about.
+    > If your design is hard to code, simplify the design before you worry about comments or code.
 
 #### Optimum Number of Comments
 
@@ -2898,14 +2729,11 @@ This advice applies mainly to code you’re writing for the first time
 - Comment the range of allowable numeric values
 - Comment coded meanings
 - Comment limitations on input data. Make sure that expected and unexpected values are documented
-- Document flags to the bit level
-- Stamp comments related to a variable with the variable’s name. That way, string searches for the variable name will find the comment as well as the variable
-
-#### Commenting Control Structures
+- **Stamp comments related to a variable with the variable’s name. That way, string searches for the variable name will find the comment as well as the variable**
 
 #### Commenting Routines
 
-Many textbooks urge you to pile up a stack of information at the top of every routine, regardless of its size or complexity
+Many textbooks urge you to pile up a stack of information at the top of every routine, regardless of its size or complexity.
 
 - Keep comments close to the code they describe. **During maintenance, comments that are far from the code tend not to be maintained with the code**.
 - Describe each routine in one or two sentences at the top of the routine. **If you can’t describe the routine in a short sentence or two, you probably need to think harder about what it’s supposed to do**.
@@ -2932,10 +2760,6 @@ Many textbooks urge you to pile up a stack of information at the top of every ro
     - Include legal notices in the block comment
     - Give the file a name related to its contents
 - The Book Paradigm for Program Documentation. In the Book Paradigm, code and its documentation are organized into several components similar to the components of a book to help programmers get a high-level view of the program.
-
-### 32.6 IEEE Standards
-
-IEEE standards are developed by groups composed of practitioners and academicians who are expert in a particular area. 
 
 ## Chapter 33 Personal Character
 
