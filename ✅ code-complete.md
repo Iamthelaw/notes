@@ -166,28 +166,49 @@ design process.
 And at last motivating (or not) quotes that I think pretty good even in the current
 time.
 
-- The architecture should explain why a single database is preferable to multiple databases (or vice versa), explain why a database is preferable to flat files, identify possible interactions with other programs that access the same data, explain what views have been created on the data, and so on
-- The most radical solution to building software is not to build it at all — to buy it instead or to download open-source software for free
-- If necessary, plan the architecture work as a separate project, too
-- Design Is About Tradeoffs and Priorities. If minimizing development time is more important, a good designer will craft a different design
-- Designing the class interface is an iterative process just like any other aspect of design. If you don’t get the interface right the first time, try a few more times until it stabilizes. If it doesn’t stabilize, you need to try a different approach
-- When you come up with a first design attempt that seems good enough, don’t stop!
-- A final risk of prototyping arises when developers do not treat the code as throwaway code
-- A small number of objects might cause performance issues, but programmers are notoriously poor at guessing which code really causes problems
-- Fail hard during development so that you can fail softer during production
-- Once you’ve written the pseudocode and designed the data, take a minute to review the pseudocode you’ve written. Back away from it, and think about how you would explain it to someone else.
-- People are more willing to review a few lines of pseudocode than they are to review 35 lines of C++ or Java.
-- Once you start coding, you get emotionally involved with your code and it becomes harder to throw away a bad design and start over
-- The greater the flexibility desired, the higher the complexity of the code needed to support that flexibility and the more error-prone the code will be. Because successful programming depends on minimizing complexity, a skilled programmer will build in as much flexibility as needed to meet the software’s requirements but will not add flexibility — and related complexity — beyond what’s required
-- It’s OK to figure out murder mysteries, but you shouldn’t need to figure out code. You should be able to read it
-- Complicated code is a sign that you don’t understand your program well enough to make it simple
-- You must hope to find errors in your code. Such a hope might seem like an unnatural act, but you should hope that it’s you who finds the errors and not someone else
-- Most errors tend to be concentrated in a few highly defective routines
-- If you’re programming by trial and error, defects are guaranteed. You don’t need to learn how to fix defects; you need to learn how to avoid them in the first place
-- Programmers treat small changes casually. They don’t desk-check them, they don’t have others review them, and they sometimes don’t even run the code to verify that the fix works properly
-- Sometimes the cheapest and best way to improve a program’s performance is to buy new hardware
-- Jackson’s Rules of Optimization: Rule 1. Don’t do it. Rule 2 (for experts only). Don’t do it yet — that is, not until you have a perfectly clear and unoptimized solution
-- Programmers are notorious for saying that a program is “90 percent complete” during the last 50 percent of the project
+> The architecture should explain why a single database is preferable to multiple databases (or vice versa), explain why a database is preferable to flat files, identify possible interactions with other programs that access the same data, explain what views have been created on the data, and so on
+
+> The most radical solution to building software is not to build it at all — to buy it instead or to download open-source software for free
+
+> If necessary, plan the architecture work as a separate project, too
+
+> Design Is About Tradeoffs and Priorities. If minimizing development time is more important, a good designer will craft a different design
+
+> Designing the class interface is an iterative process just like any other aspect of design. If you don’t get the interface right the first time, try a few more times until it stabilizes. If it doesn’t stabilize, you need to try a different approach
+
+> When you come up with a first design attempt that seems good enough, don’t stop!
+
+> A final risk of prototyping arises when developers do not treat the code as throwaway code
+
+> A small number of objects might cause performance issues, but programmers are notoriously poor at guessing which code really causes problems
+
+> Fail hard during development so that you can fail softer during production
+
+> Once you’ve written the pseudocode and designed the data, take a minute to review the pseudocode you’ve written. Back away from it, and think about how you would explain it to someone else.
+
+> People are more willing to review a few lines of pseudocode than they are to review 35 lines of C++ or Java.
+
+> Once you start coding, you get emotionally involved with your code and it becomes harder to throw away a bad design and start over
+
+> The greater the flexibility desired, the higher the complexity of the code needed to support that flexibility and the more error-prone the code will be. Because successful programming depends on minimizing complexity, a skilled programmer will build in as much flexibility as needed to meet the software’s requirements but will not add flexibility — and related complexity — beyond what’s required
+
+> It’s OK to figure out murder mysteries, but you shouldn’t need to figure out code. You should be able to read it
+
+> Complicated code is a sign that you don’t understand your program well enough to make it simple
+
+> You must hope to find errors in your code. Such a hope might seem like an unnatural act, but you should hope that it’s you who finds the errors and not someone else
+
+> Most errors tend to be concentrated in a few highly defective routines
+
+> If you’re programming by trial and error, defects are guaranteed. You don’t need to learn how to fix defects; you need to learn how to avoid them in the first place
+
+> Programmers treat small changes casually. They don’t desk-check them, they don’t have others review them, and they sometimes don’t even run the code to verify that the fix works properly
+
+> Sometimes the cheapest and best way to improve a program’s performance is to buy new hardware
+
+> Jackson’s Rules of Optimization: Rule 1. Don’t do it. Rule 2 (for experts only). Don’t do it yet — that is, not until you have a perfectly clear and unoptimized solution
+
+> Programmers are notorious for saying that a program is “90 percent complete” during the last 50 percent of the project
 
 ## Chapter 3 Measure Twice, Cut Once: Upstream Prerequisites
 
