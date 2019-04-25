@@ -1,5 +1,194 @@
 # Code complete notes
 
+## TLDR part
+
+The book is mostly outdated and contains some really crazy detailed chapters about
+naming integer variables and placing spaces around block of code (layout).
+
+But noneless it is a fundamental book for programming practices and a lot of things
+that seem like they are obvious or always be there. Also the author is aware about "Extreme Programming" book and poke at it sometimes, and quotes a lot other fundamental
+books like "The Practical Programmer" and "The Mythical Man-Month".
+
+What I really like is a central motive of the whole book - as a programmer your
+responsibility is **reduce complexity** of the software, not the other way around.
+Classes and functions and good variable names are your tool to make code clear and
+simple.
+
+Short overview of chapters that I think worth reading is next.
+
+### Chapter 3 Upstream prerequisites
+
+This is about how changes in the software are cost more and more after the time and
+the solution is to spend a lot of time analyzing prerequisites and by that saving
+time and money in the future.
+
+### Chapter 5 Software Design
+
+What it is, levels of design, designing blocks and best practices. Pretty solid
+stuff, I think this one is one of the good chapters and I took a lot notes from
+there. But basic thought I think that there is a levels and practices but in the
+end of the day design is hard, and good design is never the first attempt
+to solve the problem.
+
+### Chapter 6 Classes
+
+How to write good abstractions, interfaces and inheritance and what are the "Bad"
+classes. Lots of C++, Visual Basic and Java examples that is pretty hard to
+convert to Python. In this book Python is a simple, a little dumb and slow language.
+
+### Chapter 7 Routines
+
+The whole book it is a confusing like hell name "routine" is just a synonim of
+function or method. But, what I did liked that he clearly separating "routine""
+from "procedure". Procedure is not returning anything, it is just running
+commands in a specific order. Most of the chapter however is boring rules for
+how to name "routine", how many parameters is bad, how to keep cohesion between
+"routines" under control.
+
+### Chapter 8 Defensive programming
+
+That's about practices that programmers invented to make the code super defensive
+agains user input, because users can use your software in a very unexpected ways.
+Using assertions, sanitizing inputs, error handling etc. There is a tradeoff -
+the more defensive programm is the more complex and bloated with checks it is.
+
+### Chapter 9 Pseudocode programming process
+
+Really enjoyed this one. He talks about how programmers can use PPP to try different
+software designs quickly, how reviewing pseudocode is so much easier and simle then
+actual code and that one of the great benefits of PPP is that it will be converted
+to docstrings and comments after code is written.
+
+### Chapter 11 Variable names
+
+The boring one, but a little more entertaining then chapter about placing
+spaces and new lines to organize code. Some good examples of bad names like
+`ttl5`, `ttlS` and `tt1S`. Plus subchapter about naming conventions, and naming
+conventions are pretty important in heavy specialized projects.
+
+### Chapters 12-19 Data types, conditionals, loops
+
+### Chapter 20 Software quality
+
+So there is a quality that user think of and there is a quality of product that
+programmers are think of. And they are not the same. So programmers can raise
+software quality by doing code reviews, unit tests, prototyping,
+design reviews, integration and system tests. And again for the author the main
+reason to kepp software qulity high is to escape future changes of the software
+that will cost more and more money. So next few chapters about quality practices.
+
+### Chapter 21 Collaborative Construction
+
+Code reviews, introspections and pair programming. He is not a fan of fulltime
+pair programming and his idea of code reviews is pretty old - basically it is a
+meeting when 2 or more reviwers are reading author code before meeting, making
+notes and then gathering - author, reviwers and moderator to discuss code and
+create a resulting paper of the founded bugs.
+
+### Chapter 22 Developer Testing
+
+Different testing practices and testing goals. What was interesting is a testing
+notes and in later chapters he wrote about database of defects (say stackoverflow).
+Some good tips to try out when writing test case, because most of tests that
+programmers writing are positive tests, where the tests is a tool to find bugs.
+
+### Chapter 23 Debugging
+
+Practices to efficently debug to the core of the problem, brute force technics and
+tips. But overall debugging is discouraged and a last resort. Author thinks that
+good programmer should use his own mind to figure out the problem first and not
+rush into hacking his way around.
+
+### Chapter 24 Refactoring
+
+The interesting thought is that refactoring (as it defined by the most respected
+writers in this area Fowler) is making working code beautiful. It is not ment to
+be used as a tool to fix bugs. If class is buggy, it shoud be rewritten from scratch
+with a good design in mind. Refactoring is a cosmetics, not a suergery operation.
+
+### Chapter 25-26 Code-tuning
+
+Performance optimizations and traidoffs. The performance optimizations is highly
+bad idea without proper measuring and knowing what you are doing. First write
+clean readable and slow code, if it ever will be needed it can be optimized later
+in exchange of readablilty.
+
+### Chapter 27 Project size
+
+Lots of numbers and stadies about the correlation between project size, team size
+and quality of the software.
+
+### Chapter 28 Managing construction
+
+The role of the manager in the software construction - estimating project and treating
+programmers like a people.
+
+### Chapter 29 Integration
+
+Chapter about how to ingrate parts of the bigger project if saw two teams are building
+two big parts and the third is doing lots of smaller parts, combining techniques.
+I think with microservices the problem is not going anywhere because different
+teams can create not 100% compatible interfaces, miscomunicaion is a thing
+in our days too.
+
+### Chapter 30 Tool-oriented environments
+
+Pretty good idea to before starting working on the project to make time to think
+about what internal tool we would need to be efficent when working on this project.
+It is a scaffolding scripts and local testing endpoints and CLI tools.
+
+### Chapter 31 Layout and Style
+
+If you are really interested in the rules of ho to place spaces in the code
+and how to use new lines to create a blocks of code, then this chapter is fo you,
+my friend.
+
+### Chapter 32 Self-documenting code
+
+Comments, do we need them if code is self-explanining? Returning back to pseudocode
+that helps define design and useing it for comments for our code. And don't forget -
+the comment should answer question *Why?* not *How?*.
+
+### Chapter 33 Personal character
+
+So, what kind of characteristics is separating good programmers out of bad ones?
+I did liked the subchapter about characteristics that don't matter as much as
+many people think - persistence, experience and gonzo programming. Can't agree more.
+
+### Checklist
+
+The big part of the book is a checklist in the end of each chapter with questions
+that hopefully help programmer to refrech important topics and check his code or
+design process.
+
+### Quotes
+
+And at last motivating (or not) quotes that I think pretty good even in the current
+time.
+
+- The architecture should explain why a single database is preferable to multiple databases (or vice versa), explain why a database is preferable to flat files, identify possible interactions with other programs that access the same data, explain what views have been created on the data, and so on
+- The most radical solution to building software is not to build it at all — to buy it instead or to download open-source software for free
+- If necessary, plan the architecture work as a separate project, too
+- Design Is About Tradeoffs and Priorities. If minimizing development time is more important, a good designer will craft a different design
+- Designing the class interface is an iterative process just like any other aspect of design. If you don’t get the interface right the first time, try a few more times until it stabilizes. If it doesn’t stabilize, you need to try a different approach
+- When you come up with a first design attempt that seems good enough, don’t stop!
+- A final risk of prototyping arises when developers do not treat the code as throwaway code
+- A small number of objects might cause performance issues, but programmers are notoriously poor at guessing which code really causes problems
+- Fail hard during development so that you can fail softer during production
+- Once you’ve written the pseudocode and designed the data, take a minute to review the pseudocode you’ve written. Back away from it, and think about how you would explain it to someone else.
+- People are more willing to review a few lines of pseudocode than they are to review 35 lines of C++ or Java.
+- Once you start coding, you get emotionally involved with your code and it becomes harder to throw away a bad design and start over
+- The greater the flexibility desired, the higher the complexity of the code needed to support that flexibility and the more error-prone the code will be. Because successful programming depends on minimizing complexity, a skilled programmer will build in as much flexibility as needed to meet the software’s requirements but will not add flexibility — and related complexity — beyond what’s required
+- It’s OK to figure out murder mysteries, but you shouldn’t need to figure out code. You should be able to read it
+- Complicated code is a sign that you don’t understand your program well enough to make it simple
+- You must hope to find errors in your code. Such a hope might seem like an unnatural act, but you should hope that it’s you who finds the errors and not someone else
+- Most errors tend to be concentrated in a few highly defective routines
+- If you’re programming by trial and error, defects are guaranteed. You don’t need to learn how to fix defects; you need to learn how to avoid them in the first place
+- Programmers treat small changes casually. They don’t desk-check them, they don’t have others review them, and they sometimes don’t even run the code to verify that the fix works properly
+- Sometimes the cheapest and best way to improve a program’s performance is to buy new hardware
+- Jackson’s Rules of Optimization: Rule 1. Don’t do it. Rule 2 (for experts only). Don’t do it yet — that is, not until you have a perfectly clear and unoptimized solution
+- Programmers are notorious for saying that a program is “90 percent complete” during the last 50 percent of the project
+
 ## Chapter 3 Measure Twice, Cut Once: Upstream Prerequisites
 
 ### 3.1 Importance of Prerequisites
